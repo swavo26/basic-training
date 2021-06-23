@@ -52,6 +52,9 @@
     <h2>Add File</h2>
       <p>Git requires a two-stage process to actually make a commit. The first is to "stage" the changes you wish to add to the commit. We'll do that step now. First, run the command <code>$ git status</code> to see that your README.md file is unstaged. Run the command <code>$ git add README.md</code>. You won't see any activity from the terminal except a new prompt line. But if you run <code>$ git status</code> again, you'll see that now your <code>README.md</code> file is "staged" for a commit.</p>
 
+    <h2>Add Identifying Information</h2>
+      <p>When performing a Commit, Git needs to be able to identify who is submitting the commit. For this you will be required to add your name and email to the global configuration. The syntax to add your name is <code>$ git config --global user.name "Your Name"</code>. The syntax to add your email is <code>$ git config --global user.email "you@example.com"</code>. Without these two entries your commit will fail.</p>
+
     <h2>Commit</h2>
       <p>Committing is scary, but this is an easy first one! The syntax for a Git commit is <code>git commit -m "YOUR COMMIT MESSAGE HERE"</code>. The commit message is meant to be short (about 50 characters) but descriptive about the changes the commit will make when applied to the repository. If you're having trouble writing a short commit message, you may be committing too many changes at once (<a href="https://chris.beams.io/posts/git-commit/#limit-50" target="_blank">source</a>).</p>
 
